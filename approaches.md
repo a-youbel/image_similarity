@@ -34,7 +34,7 @@ All these methods convert images into a fixed-size fingerprint. You can compute 
 * Converts image to grayscale and resizes to small fixed size (e.g., 8×8)
 * Hash = 1 if pixel > average brightness, else 0
 
-🟢 Good: Very fast
+🟢 Good: Very fast\
 🔴 Bad: Not robust to contrast changes or complex transformations
 
 #### 2. **Difference Hash (dHash)**
@@ -42,7 +42,7 @@ All these methods convert images into a fixed-size fingerprint. You can compute 
 * Measures **gradient direction** (difference between adjacent pixels)
 * More robust than aHash to brightness and contrast changes
 
-🟢 Good: Efficient, better than aHash
+🟢 Good: Efficient, better than aHash\
 🔴 Bad: Still can struggle with certain transformations
 
 #### 3. **Perceptual Hash (pHash)**
@@ -50,7 +50,7 @@ All these methods convert images into a fixed-size fingerprint. You can compute 
 * Uses **Discrete Cosine Transform (DCT)** to focus on low-frequency image features
 * Captures overall structure and shapes
 
-🟢 Good: Most robust among classic methods
+🟢 Good: Most robust among classic methods\
 🔴 Slightly slower
 
 #### 4. **Wavelet Hash (wHash)**
@@ -58,7 +58,7 @@ All these methods convert images into a fixed-size fingerprint. You can compute 
 * Uses wavelet transformation to capture both frequency and spatial features
 * Best for capturing high-level image similarity
 
-🟢 Good: Strong against noise and transformation
+🟢 Good: Strong against noise and transformation\
 🔴 Less widely used
 
 ---
